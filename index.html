@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A program to remove duplicate from a list</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><b>Duplicate Remover</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+       <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+       
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#help">Guideline</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container1" id="home">
+    <div class="hero">
+        <h3 class="text1 mt-3">List Cleanup Tool</h3>
+        <p>Quickly remove duplicates from your list. Paste your items below to get started.</p>
+    </div>
+    <div class="mt-2 boxes d-flex flex-wrap mb-5 pe-2 pb-1" id="head">
+      <div class="INPUT">
+        <h5>INPUT LIST</h5>
+        <textarea class="textarea" placeholder="Enter values separated by commas..." id="text1"></textarea><br>
+        <button onclick="removeDuplicates()" id="myButton"><i class="fa-sharp fa-solid fa-trash-arrow-up  me-1"></i><B>REMOVE DUPLICATES</B></button>
+      </div>
+      <div class="CLEARED"><h5>CLEARED LIST</h5>
+        <textarea class="textarea" placeholder="copy your results..." id="myText"></textarea><br>
+        <button onclick="myFunction()" id="copy"><b>Copy to clipboard</b></button>
+        </div>
+         </div>
+      
+        <br>
+
+        <div class="container2">
+          <H2 id="help">Guideline</H2></div><br><br>
+        
+           <div class="mt-2 boxes d-flex flex-wrap  pe-2 pt-1 pb-5" id="help1">
+        <p>1. Input your figure/letter in the text area of the input section<br>
+           2. Apply comma symbol after each figure/letter is inputed<br>
+           3. Tap <b>REMOVE DUPLICATES</b> button and your results will <br>automatically be given.<br>
+           4. lastly, tap the<b> COPY TO CLIPBOARD</b> button if needed.
+        </p>
+        <div class="img">
+        <img src="helpful.png" class="img">
+         </div>
+         </div>
+      </div>
+    
+       <footer id="lastdiv">© 2026 Simplified Duplicate removal Tool • School Project by Gideon and Albert</footer>
+          
+
+     
+      
+        <script>
+          function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myText");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText.value);
+}
+
+
+
+
+
+
+
+        </script>
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script src="index.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

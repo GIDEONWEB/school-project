@@ -1,0 +1,154 @@
+#nav {
+    background-color: #ffffff !important;
+     transition: background 0.3s ease, color 0.3s ease;
+    
+}
+
+#nav a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+#nav a:hover {
+  transform: scale(1.1);
+}
+
+
+
+.container1{
+    /* border: 2px solid red; */
+    width: auto;
+    padding: 0px 20px 0px 20px;
+    background-color: #f9fafb;
+    
+}
+.textarea{
+    width: 500px;
+    height: 250px;
+}
+
+#myButton {
+ background-color: #00005c;
+  border: none;
+  color: white;
+  padding: 15px 160px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 5px;
+}
+
+  #myButton:hover{
+     background-color: #0606a0;
+      color: white;
+
+}
+
+#myButton:active {
+border-color: #f9fafb;
+
+}
+
+#copy{
+ background-color: #00005c;
+  padding: 15px 180px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 50px; 
+  border-radius: 5px;
+  border: none;
+  color: #f9fafb;
+}
+
+#copy:hover{
+    background: #0606a0;
+}
+
+#copy:active{
+    background-color:#0606a0;
+}
+
+.container-fluid{
+    font-family:  Ronzino;
+}
+
+#textside2{
+    background-color: gray-100;
+}
+.flex-wrap{
+    align-items: center;
+    justify-content: center;
+    gap: 5em !important;
+}
+@media (max-width: 767px) {
+ .textarea{
+    width: 400px;
+    height: 250px;
+}
+.boxes{
+    padding: 10px;
+}
+.CLEARED{
+    padding: 10px;
+}
+
+#myButton{
+    height: 65px;
+   
+}
+
+#copy{
+     height: 65px;
+
+    }
+
+#lastdiv{
+    width: 500;
+}
+
+
+
+}
+.img{
+    width: 400px;
+    height: 400px;
+  
+}
+
+#help1{
+    background-color: #f9fafb ;
+    font-size: larger;
+    font-family: inter;
+    padding-top: 20% ;
+}
+
+#lastdiv{
+    justify-content: center;
+     align-items: center; 
+     align-content: center;
+     text-align: center;
+    background-color: #407bff;
+     padding:20px;
+     font-size: small;
+
+}
+
+#help{
+    text-align: center;
+  font-size: 3rem;
+    color: #333;
+    transition: all 0.3s ease; /* smooth animation */
+    cursor: pointer;
+  }
+
+  #help:hover {
+    color: #1b1731;   /* changes color on hover */
+    transform: scale(1.1); /* slightly bigger */
+  }
